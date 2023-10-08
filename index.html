@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh Program JavaScript</title>
+</head>
+<body>
+    <h1>Contoh Program JavaScript</h1>
+
+    <!-- Contoh Program JavaScript -->
+    <script>
+        // Contoh if-else
+        const  umur = 15;
+        if (umur >= 17) {
+            console.log("Selamat! Anda cukup umur.");
+        } else {
+            const tunggutahun = 17 - umur;
+            console.log("Maaf, Umur kamu masih kurang Coba lagi.");
+        }
+
+        // Contoh nested if
+        var angka = 10;
+        if (angka > 0) {
+            if (angka % 2 === 0) {
+                console.log("Angka adalah positif dan genap.");
+            } else {
+                console.log("Angka adalah positif dan ganjil.");
+            }
+        } else if (angka === 0) {
+            console.log("Angka adalah nol.");
+        } else {
+            console.log("Angka adalah negatif.");
+        }
+
+        // Contoh switch-case
+        var hari = "Senin";
+        switch (hari) {
+            case "Senin":
+                console.log("Hari ini adalah Senin.");
+                break;
+            case "Selasa":
+                console.log("Hari ini adalah Selasa.");
+                break;
+            default:
+                console.log("Hari ini adalah hari lain.");
+        }
+
+        // Contoh for statement
+        for (var i = 1; i <= 5; i++) {
+            console.log("Iterasi ke-" + i);
+        }
+
+        // Contoh while
+        var counter = 1;
+        while (counter <= 5) {
+            console.log("Iterasi ke-" + counter);
+            counter++;
+        }
+
+        // Contoh do-while
+        var angkaRandom;
+        do {
+            angkaRandom = Math.random();
+            console.log("Angka acak: " + angkaRandom);
+        } while (angkaRandom < 0.5);
+
+        // Contoh function
+        function tambahkan(a, b) {
+            return a + b;
+        }
+
+        var hasilPenambahan = tambahkan(5, 4);
+        console.log("Hasil penambahan: " + hasilPenambahan);
+    </script>
+</body>
+</html>
